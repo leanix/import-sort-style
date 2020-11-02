@@ -1,0 +1,31 @@
+{
+  "name": "import-sort-style-leanix",
+  "version": "1.0.0",
+  "description": "Custom LeanIX style for JS/TS import-sort package",
+  "keywords": [
+    "leanix"
+  ],
+  "author": "LeanIX GmbH",
+  "homepage": "https://github.com/leanix/import-sort-style",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leanix/import-sort-style"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib",
+    "prepare": "npm run clean && npm run build",
+    "release": "npm version patch && git push --follow-tags & npm publish"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.5",
+    "import-sort-style": "^6.0.0",
+    "import-sort-parser": "^6.0.0",
+    "typescript": "^3.2.4"
+  }
+}
