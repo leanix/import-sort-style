@@ -1,4 +1,4 @@
-# import-sort-style-leanix
+# @leanix/import-sort-style
 
 This [import-sort](https://github.com/renke/import-sort) is based on [import-sort-style-module](https://github.com/renke/import-sort/tree/master/packages/import-sort-style-module).
 
