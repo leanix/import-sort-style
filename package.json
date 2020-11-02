@@ -17,15 +17,25 @@
     "dist"
   ],
   "scripts": {
+    "test": "jest",
     "build": "tsc",
     "clean": "rm -rf lib",
-    "prepare": "npm run clean && npm run build",
-    "release": "npm version patch && git push --follow-tags & npm publish --access public"
+    "prepublishOnly": "npm test && npm run clean && npm run build",
+    "release": "npm test && npm version patch && git push --follow-tags & npm publish --access public"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.15",
     "@types/node": "^10.3.5",
-    "import-sort-style": "^6.0.0",
+    "import-sort": "^6.0.0",
+    "import-sort-config": "^6.0.0",
     "import-sort-parser": "^6.0.0",
-    "typescript": "^3.2.4"
+    "import-sort-parser-typescript": "^6.0.0",
+    "import-sort-style": "^6.0.0",
+    "jest": "^26.6.2",
+    "ts-jest": "^26.4.3",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "import-sort": "^6.0.0"
   }
 }

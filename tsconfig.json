@@ -1,16 +1,12 @@
+/* https://angular.io/config/solution-tsconfig. */
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "target": "es6",
-    "declaration": true,
-    "declarationMap": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "strict": true,
-    "types": ["node"],
-    "lib": ["es2017"],
-    "outDir": "dist",
-    "rootDir": "src"
-  },
-  "include": ["src"]
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
 }
