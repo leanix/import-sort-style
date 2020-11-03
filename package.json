@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.lib.json",
     "clean": "rm -rf lib",
     "prepublishOnly": "npm test && npm run clean && npm run build",
     "release": "npm test && npm version patch && git push --follow-tags & npm publish --access public"
