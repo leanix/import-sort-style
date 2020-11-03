@@ -1,6 +1,6 @@
 {
   "name": "@leanix/import-sort-style",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Custom LeanIX style for JS/TS import-sort package",
   "keywords": [
     "leanix"
