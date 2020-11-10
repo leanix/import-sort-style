@@ -40,3 +40,7 @@ The order of imports is:
 7. Local, relative modules are sorted by "relative depth" and then by name `import { LIMIT } from './app.constants';`
 
 See the [tests](./test/main.spec.ts) for more examples.
+
+## Copyright and license
+
+Copyright 2020 LeanIX GmbH under the [Unlicense license](LICENSE).
